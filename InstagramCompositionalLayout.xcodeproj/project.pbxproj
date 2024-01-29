@@ -13,6 +13,11 @@
 		1B8ED3FB2B6557D500534D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ED3F92B6557D500534D98 /* Main.storyboard */; };
 		1B8ED3FD2B6557DD00534D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ED3FC2B6557DD00534D98 /* Assets.xcassets */; };
 		1B8ED4002B6557DD00534D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ED3FE2B6557DD00534D98 /* LaunchScreen.storyboard */; };
+		1B8ED40C2B655A8F00534D98 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ED40A2B655A8F00534D98 /* HomePageViewController.swift */; };
+		1B8ED40D2B655A8F00534D98 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ED40B2B655A8F00534D98 /* HomePageViewController.xib */; };
+		1B8ED4122B65608F00534D98 /* InstaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ED4102B65608F00534D98 /* InstaCollectionViewCell.swift */; };
+		1B8ED4132B65608F00534D98 /* InstaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ED4112B65608F00534D98 /* InstaCollectionViewCell.xib */; };
+		1B8ED4162B6560E100534D98 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ED4152B6560E100534D98 /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1B8ED3FC2B6557DD00534D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8ED3FF2B6557DD00534D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8ED4012B6557DD00534D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8ED40A2B655A8F00534D98 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		1B8ED40B2B655A8F00534D98 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		1B8ED4102B65608F00534D98 /* InstaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B8ED4112B65608F00534D98 /* InstaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstaCollectionViewCell.xib; sourceTree = "<group>"; };
+		1B8ED4152B6560E100534D98 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		1B8ED3F22B6557D500534D98 /* InstagramCompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
+				1B8ED4142B65609C00534D98 /* Extension */,
+				1B8ED4072B655A4200534D98 /* Modules */,
 				1B8ED3F32B6557D500534D98 /* AppDelegate.swift */,
 				1B8ED3F52B6557D500534D98 /* SceneDelegate.swift */,
 				1B8ED3F72B6557D500534D98 /* ViewController.swift */,
@@ -65,6 +77,57 @@
 				1B8ED4012B6557DD00534D98 /* Info.plist */,
 			);
 			path = InstagramCompositionalLayout;
+			sourceTree = "<group>";
+		};
+		1B8ED4072B655A4200534D98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED4082B655A4D00534D98 /* HomePage */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1B8ED4082B655A4D00534D98 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED4092B655A5F00534D98 /* Views */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		1B8ED4092B655A5F00534D98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED40F2B65605A00534D98 /* CollectionViewCells */,
+				1B8ED40E2B65604100534D98 /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B8ED40E2B65604100534D98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED40A2B655A8F00534D98 /* HomePageViewController.swift */,
+				1B8ED40B2B655A8F00534D98 /* HomePageViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1B8ED40F2B65605A00534D98 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED4102B65608F00534D98 /* InstaCollectionViewCell.swift */,
+				1B8ED4112B65608F00534D98 /* InstaCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		1B8ED4142B65609C00534D98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B8ED4152B6560E100534D98 /* NSObject+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8ED40D2B655A8F00534D98 /* HomePageViewController.xib in Resources */,
 				1B8ED4002B6557DD00534D98 /* LaunchScreen.storyboard in Resources */,
+				1B8ED4132B65608F00534D98 /* InstaCollectionViewCell.xib in Resources */,
 				1B8ED3FD2B6557DD00534D98 /* Assets.xcassets in Resources */,
 				1B8ED3FB2B6557D500534D98 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8ED40C2B655A8F00534D98 /* HomePageViewController.swift in Sources */,
 				1B8ED3F82B6557D500534D98 /* ViewController.swift in Sources */,
 				1B8ED3F42B6557D500534D98 /* AppDelegate.swift in Sources */,
 				1B8ED3F62B6557D500534D98 /* SceneDelegate.swift in Sources */,
+				1B8ED4122B65608F00534D98 /* InstaCollectionViewCell.swift in Sources */,
+				1B8ED4162B6560E100534D98 /* NSObject+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +353,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QDMV4V22X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCompositionalLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,8 +368,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.hello.InstagramCompositionalLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.hello.InstaLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,13 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QDMV4V22X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCompositionalLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,8 +397,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.hello.InstagramCompositionalLayout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.hello.InstaLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
